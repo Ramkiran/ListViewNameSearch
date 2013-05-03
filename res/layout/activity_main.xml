@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	
+	<LinearLayout 
+	        android:id="@+id/lin__panel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="#6211EE">
+	        
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+	        
+		        <EditText
+				    android:id="@+id/edt__searchby"
+					android:layout_height="wrap_content"
+					android:inputType="textPersonName"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:hint="Search here"
+					android:layout_margin="5dp"
+					android:drawableLeft="@drawable/search_icon"
+					android:drawablePadding="5dp"
+					android:padding="5dp"
+					android:textSize="13sp"
+					android:layout_gravity="center_vertical"
+					android:background="@drawable/border_small">
+				</EditText>
+				
+		        <Button 
+		           android:id="@+id/btn__cancel"
+			       android:layout_height="wrap_content"
+			       android:layout_width="wrap_content"
+			       android:text="cancel"
+			       android:padding="5dp"
+			       android:textSize="12sp"
+			       android:layout_gravity="center_vertical"
+			       android:textColor="#fff"
+			       android:layout_margin="5dp"
+			       android:background="#FF007F"/>
+		        </LinearLayout>
+		        
+	        	<TextView 
+	        	    android:id="@+id/txt__results"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:textSize="12sp"
+	        	    android:textColor="#fff"
+	        	    android:gravity="center_vertical"
+	        	    android:layout_marginLeft="15dp"
+	        	    android:text="Processing.."/>
+	        
+	    </LinearLayout>
+
+	<ListView 
+	    android:id="@+id/android:list"
+		android:cacheColorHint="#00000000"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+	
+</LinearLayout>   
